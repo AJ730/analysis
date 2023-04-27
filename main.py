@@ -62,8 +62,8 @@ if __name__ == '__main__':
     overal_best_average_over_all_epoch_folds = 0
     overal_best_average_over_all_epochs = []
     for acc in accs:
-        average_accross_each_fold.append(np.mean(accs.get(acc)))
-        overal_average_over_all_epochs_folds += np.mean(accs.get(acc))
+        average_accross_each_fold.append(accs.get(acc)[-1])
+        overal_average_over_all_epochs_folds += accs.get(acc)[-1]
         overal_best_average_over_all_epoch_folds += np.min(accs.get(acc))
         overal_best_average_over_all_epochs.append(np.min(accs.get(acc)))
 
@@ -103,8 +103,8 @@ if __name__ == '__main__':
     overal_best_average_over_all_epoch_folds = 0
     overal_best_average_over_all_epochs = []
     for acc in accs:
-        average_accross_each_fold.append(np.mean(accs.get(acc)))
-        overal_average_over_all_epochs_folds += np.mean(accs.get(acc))
+        average_accross_each_fold.append(accs.get(acc)[-1])
+        overal_average_over_all_epochs_folds += accs.get(acc)[-1]
         overal_best_average_over_all_epoch_folds += np.min(accs.get(acc))
         overal_best_average_over_all_epochs.append(np.min(accs.get(acc)))
 
@@ -142,8 +142,8 @@ if __name__ == '__main__':
     overal_best_average_over_all_epoch_folds = 0
     overal_best_average_over_all_epochs = []
     for acc in accs:
-        average_accross_each_fold.append(np.mean(accs.get(acc)))
-        overal_average_over_all_epochs_folds += np.mean(accs.get(acc))
+        average_accross_each_fold.append(accs.get(acc)[-1])
+        overal_average_over_all_epochs_folds += accs.get(acc)[-1]
         overal_best_average_over_all_epoch_folds += np.min(accs.get(acc))
         overal_best_average_over_all_epochs.append(np.min(accs.get(acc)))
 
